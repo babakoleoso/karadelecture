@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SGI Iyawo Lesson | ÌMÚLE` — The Sacred Foundation of Alignment</title>
+  <meta
+    name="description"
+    content="SwamiG Institute single-week Iyawo lesson on ÌMÚLE`, aligned with the SGI Pillars of Radical Devotion, Words of Power, Infinite Wisdom, and the principles of Extending Royal Legacy and Standing on the Shoulders of Enlightened Ancestors."
+  />
+  <meta name="theme-color" content="#0b0b12" />
+  <style>
+    :root{
+      --bg:#07070b;
+      --bg2:#0d0d14;
+      --panel:#11111a;
+      --panel2:#171726;
+      --panel3:#1d1d30;
+      --text:#f5f1df;
+      --muted:#c8c1a8;
+      --soft:#a899d6;
+      --purple:#7c3aed;
+      --purple2:#a855f7;
+      --gold:#d4af37;
+      --gold2:#f1d27a;
+      --line:rgba(212,175,55,.22);
+      --shadow:0 12px 35px rgba(0,0,0,.38);
+      --radius:22px;
+      --max:1120px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,58,237,.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(212,175,55,.12), transparent 28%),
+        linear-gradient(180deg, var(--bg), var(--bg2) 40%, #050508 100%);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    .wrap{
+      width:min(var(--max), calc(100% - 32px));
+      margin:0 auto;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter:blur(12px);
+      background:rgba(7,7,11,.74);
+      border-bottom:1px solid rgba(212,175,55,.12);
+    }
+
+    .topbar-inner{
+      width:min(var(--max), calc(100% - 24px));
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:12px 0;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:220px;
+    }
+
+    .brand img{
+      width:58px;
+      height:58px;
+      object-fit:contain;
+      border-radius:14px;
+      box-shadow:0 0 0 1px rgba(212,175,55,.16), 0 10px 20px rgba(0,0,0,.28);
+      background:#0b0b12;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+    }
+
+    .brand-text .eyebrow{
+      font-size:.72rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--gold2);
+    }
+
+    .brand-text .name{
+      font-size:1.05rem;
+      font-weight:700;
+      color:var(--text);
+    }
+
+    .nav-cards{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      gap:10px;
+    }
+
+    .nav-pill{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px 14px;
+      border-radius:999px;
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid rgba(168,85,247,.22);
+      color:var(--text);
+      font-size:.9rem;
+      box-shadow:0 0 0 1px rgba(255,255,255,.02) inset;
+      transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+      white-space:nowrap;
+    }
+
+    .nav-pill:hover{
+      transform:translateY(-2px);
+      border-color:rgba(212,175,55,.42);
+      box-shadow:0 12px 28px rgba(124,58,237,.18);
+    }
+
+    .hero{
+      padding:56px 0 24px;
+    }
+
+    .hero-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:32px;
+      padding:38px 26px;
+      background:
+        linear-gradient(135deg, rgba(124,58,237,.18), rgba(10,10,16,.96) 42%, rgba(212,175,55,.08) 100%);
+      border:1px solid rgba(212,175,55,.18);
+      box-shadow:var(--shadow);
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:auto -90px -90px auto;
+      width:260px;
+      height:260px;
+      background:radial-gradient(circle, rgba(212,175,55,.16), transparent 62%);
+      pointer-events:none;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:7px 12px;
+      border-radius:999px;
+      border:1px solid rgba(212,175,55,.22);
+      background:rgba(212,175,55,.08);
+      color:var(--gold2);
+      font-size:.76rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+
+    h1,h2,h3{
+      margin:0 0 12px;
+      line-height:1.15;
+      font-weight:700;
+    }
+
+    h1{
+      font-size:clamp(2rem, 4.8vw, 4rem);
+      letter-spacing:.01em;
+    }
+
+    h2{
+      font-size:clamp(1.45rem, 2.6vw, 2.2rem);
+      color:var(--gold2);
+    }
+
+    h3{
+      font-size:1.15rem;
+      color:#f3df9b;
+    }
+
+    .subtitle{
+      max-width:860px;
+      color:var(--muted);
+      font-size:1.08rem;
+      margin:0 0 18px;
+    }
+
+    .quote{
+      margin-top:18px;
+      padding:18px 20px;
+      border-left:4px solid var(--gold);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+      color:#f7eec8;
+      font-size:1.05rem;
+      box-shadow:0 8px 24px rgba(0,0,0,.18) inset;
+    }
+
+    .section{
+      padding:18px 0 12px;
+    }
+
+    .section-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:1px solid rgba(212,175,55,.14);
+      border-radius:28px;
+      padding:28px 22px;
+      box-shadow:var(--shadow);
+    }
+
+    .grid{
+      display:grid;
+      gap:18px;
+    }
+
+    .grid-3{
+      grid-template-columns:repeat(3, minmax(0,1fr));
+    }
+
+    .grid-2{
+      grid-template-columns:repeat(2, minmax(0,1fr));
+    }
+
+    .panel{
+      background:linear-gradient(180deg, var(--panel2), var(--panel));
+      border:1px solid rgba(168,85,247,.18);
+      border-radius:24px;
+      padding:22px 18px;
+      box-shadow:0 10px 28px rgba(0,0,0,.22);
+    }
+
+    .panel p:last-child,
+    .panel ul:last-child,
+    .panel ol:last-child{margin-bottom:0}
+
+    .kicker{
+      display:inline-block;
+      margin-bottom:10px;
+      font-size:.76rem;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      color:var(--soft);
+    }
+
+    .muted{color:var(--muted)}
+
+    ul,ol{
+      margin:12px 0 18px 22px;
+      padding:0;
+    }
+
+    li{margin:8px 0}
+
+    .statement{
+      margin-top:12px;
+      padding:16px 18px;
+      border-radius:18px;
+      background:rgba(124,58,237,.11);
+      border:1px solid rgba(168,85,247,.18);
+      color:#f5ebff;
+      font-style:italic;
+    }
+
+    .principle{
+      border-left:4px solid var(--gold);
+    }
+
+    .practice-step{
+      position:relative;
+      padding-left:56px;
+      min-height:42px;
+    }
+
+    .practice-step .num{
+      position:absolute;
+      left:0;
+      top:0;
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(180deg, rgba(212,175,55,.28), rgba(124,58,237,.2));
+      border:1px solid rgba(212,175,55,.3);
+      color:var(--text);
+      font-weight:700;
+    }
+
+    .assignment-box{
+      background:
+        linear-gradient(135deg, rgba(212,175,55,.08), rgba(124,58,237,.08)),
+        linear-gradient(180deg, var(--panel3), var(--panel));
+      border:1px solid rgba(212,175,55,.22);
+      border-radius:26px;
+      padding:24px 20px;
+    }
+
+    .closing{
+      text-align:center;
+      padding:24px 18px;
+      border-radius:26px;
+      background:linear-gradient(180deg, rgba(124,58,237,.13), rgba(212,175,55,.07));
+      border:1px solid rgba(212,175,55,.18);
+    }
+
+    .closing p{
+      font-size:1.08rem;
+      color:#f7edc8;
+      margin:0;
+    }
+
+    footer{
+      padding:26px 0 52px;
+      color:#c8be95;
+      text-align:center;
+      font-size:.92rem;
+    }
+
+    .divider{
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(212,175,55,.3), transparent);
+      margin:22px 0;
+    }
+
+    @media (max-width:900px){
+      .grid-3,.grid-2{grid-template-columns:1fr}
+      .hero-card{padding:30px 20px}
+    }
+
+    @media (max-width:640px){
+      .topbar-inner{justify-content:center}
+      .brand{justify-content:center}
+      .nav-cards{justify-content:center}
+      .hero{padding-top:34px}
+      .section-card{padding:22px 16px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://swamiginstitute.com" target="_blank" rel="noopener">
+        <img src="SwamiG.gif" alt="SwamiG Institute Logo" />
+        <div class="brand-text">
+          <span class="eyebrow">SwamiG Institute</span>
+          <span class="name">Iyawo Lesson Module</span>
+        </div>
+      </a>
+
+      <nav class="nav-cards" aria-label="SGI navigation">
+        <a class="nav-pill" href="https://4cowrieshell.com/index0" target="_blank" rel="noopener">4-Cowrie</a>
+        <a class="nav-pill" href="https://16cowrie.com" target="_blank" rel="noopener">16-Cowrie</a>
+        <a class="nav-pill" href="https://myopele.com" target="_blank" rel="noopener">Opele</a>
+        <a class="nav-pill" href="https://iamiyawo.com" target="_blank" rel="noopener">Iyawo Track</a>
+        <a class="nav-pill" href="https://iamaborisha.com" target="_blank" rel="noopener">Obi Orisha</a>
+        <a class="nav-pill" href="https://swamiginstitute.com" target="_blank" rel="noopener">SGI Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <span class="eyebrow">Single Week Lesson</span>
+          <h1>ÌMÚLE`</h1>
+          <p class="subtitle">
+            <strong>The Sacred Foundation of Alignment</strong><br />
+            A SwamiG Institute Iyawo lesson on grounding, spiritual stability, and the conscious establishment
+            of a foundation strong enough to support devotion, speech, wisdom, and legacy.
+          </p>
+          <div class="quote">
+            “What you build will only rise to the level of what it stands upon.”
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-card">
+          <h2>Lesson Focus</h2>
+          <p>
+            <strong>Ìmúle`</strong> is the act of consciously establishing one’s foundation so that the
+            <strong>Ori</strong> can function with clarity, steadiness, and authority. In this lesson, grounding is
+            not treated as a casual mood, but as a sacred discipline. Before one can speak with power, interpret with
+            wisdom, or walk in alignment, one must first be firmly established.
+          </p>
+
+          <div class="divider"></div>
+
+          <h2>SGI Pillars</h2>
+          <div class="grid grid-3">
+            <article class="panel">
+              <span class="kicker">Pillar One</span>
+              <h3>Radical Devotion<br />(Auset / Yemojah)</h3>
+              <p>
+                Radical Devotion teaches that foundation is built through consistency, surrender, and sacred
+                discipline. To establish Ìmúle` is to return, daily and intentionally, to the practice of aligning the self.
+              </p>
+              <p>
+                Devotion is not merely emotion. It is the willingness to show up, to bow inwardly, and to build
+                strength through repetition. In this way, grounding becomes an act of reverence toward Ori.
+              </p>
+              <div class="statement">
+                Without devotion, there is no true foundation—only unanchored intention.
+              </div>
+            </article>
+
+            <article class="panel">
+              <span class="kicker">Pillar Two</span>
+              <h3>Words of Power<br />(Sekert / Olokun)</h3>
+              <p>
+                Words of Power teaches that speech stabilizes reality. The spoken word, when used consciously, helps
+                anchor the inner condition and shape the field in which spiritual work unfolds.
+              </p>
+              <p>
+                In the practice of Ìmúle`, declaration is not ornamental. It is functional. The words spoken during
+                grounding serve as the bridge between inner intention and manifested condition.
+              </p>
+              <div class="statement">
+                What is spoken with consciousness begins to organize what was formerly scattered.
+              </div>
+            </article>
+
+            <article class="panel">
+              <span class="kicker">Pillar Three</span>
+              <h3>Infinite Wisdom<br />(Tehuti / Orunmila)</h3>
+              <p>
+                Infinite Wisdom teaches that correct perception requires truthfulness. One must not assume balance,
+                but verify it. One must not pretend clarity, but examine condition honestly.
+              </p>
+              <p>
+                Through Ìmúle`, the seeker learns to observe the true state of mind, body, and spirit. Wisdom begins
+                where self-deception ends.
+              </p>
+              <div class="statement">
+                Foundation deepens when awareness becomes honest enough to see what is truly present.
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-card">
+          <h2>SGI Principles</h2>
+          <div class="grid grid-2">
+            <article class="panel principle">
+              <span class="kicker">Principle A</span>
+              <h3>Extending Royal Legacy</h3>
+              <p>
+                Ìmúle` is not only personal stability. It is the strengthening of one’s role in an ongoing lineage of
+                disciplined spiritual becoming. Every deliberate act of grounding reinforces the dignity, order, and
+                continuity of what has been entrusted to you.
+              </p>
+              <p>
+                To establish foundation is to prepare oneself to carry legacy in a worthy way. What is unstable cannot
+                transmit royalty with integrity.
+              </p>
+            </article>
+
+            <article class="panel principle">
+              <span class="kicker">Principle B</span>
+              <h3>Standing on the Shoulders of Enlightened Ancestors</h3>
+              <p>
+                No sincere grounding practice is ever performed alone. Through conscious stillness, remembrance, and
+                alignment, the student comes into relationship with those whose discipline and illumination created the
+                path now being walked.
+              </p>
+              <p>
+                Ìmúle` therefore becomes an ancestral act. You establish yourself by consciously standing upon wisdom
+                already earned, embodied, and passed forward.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-card">
+          <h2>Words of Power for This Lesson</h2>
+          <div class="panel">
+            <p class="muted">
+              This statement may be spoken slowly, with reverence, at the beginning of practice:
+            </p>
+            <div class="statement" style="font-style:normal; font-size:1.06rem;">
+              “Ori mi, I establish my foundation in truth.<br />
+              I am grounded. I am aligned. I am stable.<br />
+              I stand upon the wisdom of enlightened ancestors.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-card">
+          <h2>Core Practice — Establishing Ìmúle`</h2>
+          <div class="grid">
+            <article class="panel practice-step">
+              <div class="num">1</div>
+              <h3>Position the Body-Temple</h3>
+              <p>
+                Sit or stand intentionally. Keep the spine upright and the body composed. Let the feet connect
+                consciously with the ground. Feel the body as temple, pillar, and vessel.
+              </p>
+            </article>
+
+            <article class="panel practice-step">
+              <div class="num">2</div>
+              <h3>Regulate the Breath</h3>
+              <p>
+                Inhale for a count of four, hold for four, and exhale for four. Repeat for several rounds until the
+                body begins to settle and the mind becomes less scattered.
+              </p>
+            </article>
+
+            <article class="panel practice-step">
+              <div class="num">3</div>
+              <h3>Speak the Foundation</h3>
+              <p>
+                Use the lesson’s Words of Power with intention. Speak clearly and without haste. Let each line descend
+                into the body rather than remain only at the lips.
+              </p>
+            </article>
+
+            <article class="panel practice-step">
+              <div class="num">4</div>
+              <h3>Enter Stillness</h3>
+              <p>
+                Remain in silence for several minutes. Observe what is present without immediately correcting,
+                decorating, or resisting it. Return to conscious breating. Allow truth to reveal condition.
+              </p>
+            </article>
+
+            <article class="panel practice-step">
+              <div class="num">5</div>
+              <h3>Verify the Condition</h3>
+              <p>
+                Ask inwardly: <em>“What is my condition?”</em> Notice whether the self feels stable, resistant,
+                receptive, mixed, or unsettled. Infinite Wisdom begins in accurate observation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-card">
+          <h2>Weekly Assignment</h2>
+          <div class="assignment-box">
+            <h3>The Discipline of Foundation</h3>
+            <p>
+              Establish and perform a personal <strong>Ìmúle` ritual</strong> for your Ori during this lesson period.
+              The purpose is to cultivate steadiness through devotion, speech, and truthful observation.
+            </p>
+
+            <ul>
+              <li>Select a consistent day and time for the practice.</li>
+              <li>Choose a location that supports calmness, order, and sacred focus.</li>
+              <li>Include body position, breath regulation, spoken Words of Power, and stillness.</li>
+              <li>Practice for approximately 5–10 minutes each day during the assigned week.</li>
+            </ul>
+
+            <p>
+              After each practice, document your state before and after, along with any notable insight regarding your
+              level of grounding, alignment, or resistance.
+            </p>
+
+            <div class="statement">
+              Reflection Prompt: “How did Radical Devotion, Words of Power, and Infinite Wisdom strengthen my
+              foundation during this week of Ìmúle`?”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-card">
+          <h2>Teaching Insight</h2>
+          <div class="panel">
+            <p>
+              Ìmúle` is the silent prerequisite to accurate perception. Where there is no grounding, devotion becomes
+              irregular, words lose force, and wisdom becomes distorted by instability. When foundation is properly
+              established, however, the student becomes more capable of clarity, discipline, and right interpretation.
+            </p>
+            <p>
+              In this sense, Ìmúle` is not the end of spiritual work. It is the condition that makes deeper work
+              trustworthy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:24px;">
+      <div class="wrap">
+        <div class="closing">
+          <p>
+            “Establish your foundation daily.<br />
+            Speak your alignment into existence.<br />
+            Stand in wisdom.<br />
+            And extend royal legacy while standing on the shoulders of enlightened ancestors.”
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    SwamiG Institute • SGI Iyawo Lesson Module • ÌMÚLE` — The Sacred Foundation of Alignment   
+  </footer>
+</body>
+</html>
